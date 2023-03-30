@@ -10,7 +10,6 @@ body {
 }
 .main-el {
   position: absolute;
-
   min-width: 100%;
   min-height: 100%;
   margin: 0;
@@ -310,7 +309,7 @@ body {
   }
   .bottom-swiper {
     position: absolute;
-    top: 310px;
+    bottom: 0;
     margin-left: 18px;
     width: 90%;
     padding: 0;
@@ -404,3 +403,23 @@ body {
     background-color: #42567a;
   }
 }
+@media screen and (min-width: 1920px) {
+  body {
+    background-position: 0 7%;
+  }
+  .years {
+    top: 45%;
+  }
+  .title-container {
+    margin-top: 210px;
+  }
+  #page-count {
+    top: 70%;
+  }
+  .nav-container {
+    top: 72%;
+  }
+  .bottom-swiper {
+    top: 80%;
+  }
+} ;

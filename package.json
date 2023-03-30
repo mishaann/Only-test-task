@@ -16,6 +16,8 @@
   "author": "Anna Mikhaylova",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.5",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.2",
     "webpack": "^5.77.0",
