@@ -13,5 +13,7 @@
 Для запуска проекта необходимо запустить файл index.html
 
 Компонент подразумевает существование от 2 до 6 временных отрезков. В примере представлено максимальное количество. При уменьшении количества отрезков необходимо изменить значение переменной totalSlides в файле index.ts
-![demo-swiper-1](https://user-images.githubusercontent.com/88247054/228835895-bfbf0256-8e52-447d-8d5f-388d5648e522.jpg)
+
 ![demo-swiper](https://user-images.githubusercontent.com/88247054/228835903-ad32fdaf-f018-419b-9211-723e40030905.jpg)
+![demo-swiper-1](https://user-images.githubusercontent.com/88247054/228835895-bfbf0256-8e52-447d-8d5f-388d5648e522.jpg)
+
