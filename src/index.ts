@@ -29,6 +29,10 @@ const swiperElem = new Swiper(".elem-swiper", {
     prevEl: ".nested-button-prev",
   },
   breakpoints: {
+    1920: {
+      freeMode: true,
+      slidesPerView: 4,
+    },
     1280: {
       freeMode: true,
       slidesPerView: 3,
