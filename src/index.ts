@@ -3,9 +3,6 @@
 import Swiper, { Navigation, Pagination } from "swiper";
 
 const totalSlides = 6;
-const yearFrom = document.querySelector("#year-from");
-const yearTo = document.querySelector("#year-to");
-const curPage = document.querySelector("#page-count");
 const circleBtns = document.querySelectorAll(".small_circle");
 const navigationBtns = document.querySelector(".nav-container");
 
@@ -51,7 +48,9 @@ const swiperElem = new Swiper(".elem-swiper", {
 
 //навигация по кнопкам общего свайпера
 navigationBtns.addEventListener("click", (e: Event) => {
-  if ((e.target as HTMLInputElement).role !== "button") return;
+  const yearFrom = document.querySelector("#year-from");
+  const yearTo = document.querySelector("#year-to");
+  const curPage = document.querySelector("#page-count");
 
   let curCircle: HTMLElement;
   //вращение колеса
@@ -62,11 +61,9 @@ navigationBtns.addEventListener("click", (e: Event) => {
     curCircle = document.querySelector(
       `[data-id="${swiperBtm.activeIndex + 1}"]`
     );
-    console.log(curPage, curCircle);
   }
 
   if ((e.target as HTMLInputElement).classList.contains("swiper-button-prev")) {
-    console.log(swiperBtm.activeIndex);
     curPage.textContent = `0${swiperBtm.activeIndex + 1}/0${totalSlides}`;
     curCircle = document.querySelector(
       `[data-id="${swiperBtm.activeIndex + 1}"]`
@@ -103,6 +100,8 @@ navigationBtns.addEventListener("click", (e: Event) => {
   );
   curCircle.classList.remove("inactive");
   curCircle.classList.add("main");
+
+  curPage.textContent = `0${swiperBtm.activeIndex + 1}/0${totalSlides}`;
   //смена года
   switch (swiperBtm.activeIndex) {
     case 0:
@@ -134,8 +133,11 @@ navigationBtns.addEventListener("click", (e: Event) => {
 //навигация по кнопкам колеса
 circleBtns.forEach((b: HTMLElement) => {
   b.addEventListener("click", (e) => {
+    const yearFrom = document.querySelector("#year-from");
+    const yearTo = document.querySelector("#year-to");
+    const curPage = document.querySelector("#page-count");
     const image = b.querySelector("cir-img");
-    console.log(image);
+
     const curActive: HTMLElement = document.querySelector(".main");
     if (e.target === curActive) return;
 
