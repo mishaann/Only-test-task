@@ -412,6 +412,7 @@ body {
   }
   .title-container {
     margin-top: 210px;
+    margin-left: 60px;
   }
   #page-count {
     top: 70%;
