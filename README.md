@@ -15,7 +15,8 @@
 Компонент подразумевает существование от 2 до 6 временных отрезков. В примере представлено максимальное количество. При уменьшении количества отрезков необходимо изменить значение переменной totalSlides в файле index.ts
 
 ![demo-swiper](https://user-images.githubusercontent.com/88247054/228835903-ad32fdaf-f018-419b-9211-723e40030905.jpg)
-![swiper-demo](https://user-images.githubusercontent.com/88247054/228862667-cfece955-08a5-406e-b1c2-71dc4b8cb6d5.jpg)
+![swiper-demo](https://user-images.githubusercontent.com/88247054/228876196-82c9bb3c-6efe-4d81-9e14-b1ab72e27dd0.jpg)
 ![demo-swiper-1](https://user-images.githubusercontent.com/88247054/228835895-bfbf0256-8e52-447d-8d5f-388d5648e522.jpg)
+
 
 
